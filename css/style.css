@@ -14,5 +14,131 @@
 ===================================== */
 
 body .reviewContainer{
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 1280px;
+}
+
+/* =====================================
+            Left Section CSS
+===================================== */
+
+body .reviewContainer .leftSection{
+    height: fit-content;
+    margin: auto 40px;
+    width: 600px;
+}
+
+/* =====================================
+      Left Section CSS[Top-star SVG]
+===================================== */
+
+body .reviewContainer .leftSection .topStar{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: #F5C044;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 6px 0px;
+}
+
+body .reviewContainer .leftSection .topStar svg path{
+    filter: blur(.2px) brightness(1);
+    fill: url(#customGradient);
+    transform: scale(4);
+}
+
+/* =====================================
+      Left Section CSS[Body h and p]
+===================================== */
+
+body .reviewContainer .leftSection h2 {
+    font-size: 2.25rem;
+    color: #1b1818;
+    margin: 16px 0px 20px 0px;
+}
+
+body .reviewContainer .leftSection p {
+    font-size: 1.25rem;
+    color: #52525A;
+    margin-bottom: 30px;
+}
+
+body .reviewContainer .leftSection .cheklists {
+    display: flex;
+    align-items: top;
+}
+
+body .reviewContainer .leftSection .cheklists p{
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+}
+
+body .reviewContainer .leftSection .cheklists img{
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* =====================================
+            Right Section CSS
+===================================== */
+
+body .rightSection{
+    border: 2px solid red;
+    width: 600px;
+}
+
+body .rightSection .upperCardContainer {
+    border: 2px solid red;
+    display: flex;
+    justify-content: right;
+}
+
+body .rightSection .upperCardContainer .upperCard {
+    border: 2px solid red;
+    margin: 20px;
+    width: 300px;
+}
+
+body .rightSection .upperCardContainer .upperCard .cardHeader {
+    border: 2px solid red;
+    display: flex;
+}
+
+body .rightSection .upperCardContainer .upperCard .cardHeader .image img {
+    width: 90px;
+}
+
+body .rightSection .upperCardContainer .upperCard .cardHeader .ratingStars {
+    width: 150px;
+}
+
+body .rightSection .lowerCardContainer {
+    border: 2px solid red;
+    display: flex;
+    align-items: right;
+    justify-content: left;
+}
+
+body .rightSection .lowerCardContainer .lowerCard {
+    border: 2px solid red;
+    margin: 20px;
+    width: 300px;
+}
+
+body .rightSection .lowerCardContainer .lowerCard .cardHeader {
+    border: 2px solid red;
+    display: flex;
+}
+
+body .rightSection .lowerCardContainer .lowerCard .cardHeader .image img {
+    width: 90px;
+}
+
+body .rightSection .lowerCardContainer .lowerCard .cardHeader .ratingStars {
+    width: 150px;
 }
