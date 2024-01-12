@@ -13,6 +13,10 @@
                 Body CSS
 ===================================== */
 
+body {
+    background-color: #D4D4D8;
+}
+
 body .reviewContainer{
     display: flex;
     align-items: center;
@@ -26,9 +30,10 @@ body .reviewContainer{
 ===================================== */
 
 body .reviewContainer .leftSection{
-    height: fit-content;
     margin: auto 40px;
-    width: 600px;
+    width: 551px;
+    max-height: 72.5%;
+    height: 522px;
 }
 
 /* =====================================
@@ -43,7 +48,7 @@ body .reviewContainer .leftSection .topStar{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 6px 0px;
+    margin: 20px 0px;
 }
 
 body .reviewContainer .leftSection .topStar svg path{
@@ -59,13 +64,12 @@ body .reviewContainer .leftSection .topStar svg path{
 body .reviewContainer .leftSection h2 {
     font-size: 2.25rem;
     color: #1b1818;
-    margin: 16px 0px 20px 0px;
 }
 
-body .reviewContainer .leftSection p {
+body .reviewContainer .leftSection > p {
     font-size: 1.25rem;
     color: #52525A;
-    margin-bottom: 30px;
+    margin: 28px 0px 40px 0px;
 }
 
 body .reviewContainer .leftSection .cheklists {
@@ -75,7 +79,7 @@ body .reviewContainer .leftSection .cheklists {
 
 body .reviewContainer .leftSection .cheklists p{
     font-size: 0.875rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 body .reviewContainer .leftSection .cheklists img{
@@ -88,57 +92,120 @@ body .reviewContainer .leftSection .cheklists img{
 ===================================== */
 
 body .rightSection{
-    border: 2px solid red;
-    width: 600px;
+    margin: auto 40px;
+    width: 552px;
+    max-height: 72.5%;
+    height: 522px;
 }
 
+/*upper right section*/
+
 body .rightSection .upperCardContainer {
-    border: 2px solid red;
     display: flex;
     justify-content: right;
 }
 
 body .rightSection .upperCardContainer .upperCard {
-    border: 2px solid red;
+    background-color: #FFFFFF;
     margin: 20px;
-    width: 300px;
+    height: fit-content;
+    width: 261px;
+    padding: 30px 40px;
+    border-radius: 10px;
 }
 
 body .rightSection .upperCardContainer .upperCard .cardHeader {
-    border: 2px solid red;
     display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
 body .rightSection .upperCardContainer .upperCard .cardHeader .image img {
-    width: 90px;
+    height: 30px;
 }
 
 body .rightSection .upperCardContainer .upperCard .cardHeader .ratingStars {
     width: 150px;
 }
 
+body .rightSection .upperCardContainer .upperCard .cardBody h2 {
+    font-size: 1rem;
+    color: #18181B;
+    margin: 10px 0px;
+}
+
+body .rightSection .upperCardContainer .upperCard .cardBody p {
+    font-size: 1rem;
+    color: #52525A;
+}
+
+/*lower right section*/
+
 body .rightSection .lowerCardContainer {
-    border: 2px solid red;
     display: flex;
     align-items: right;
     justify-content: left;
 }
 
 body .rightSection .lowerCardContainer .lowerCard {
-    border: 2px solid red;
+    background-color: #FFFFFF;
     margin: 20px;
-    width: 300px;
+    height: fit-content;
+    width: 261px;
+    padding: 30px 40px;
+    border-radius: 10px;
 }
 
 body .rightSection .lowerCardContainer .lowerCard .cardHeader {
-    border: 2px solid red;
     display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
 body .rightSection .lowerCardContainer .lowerCard .cardHeader .image img {
-    width: 90px;
+    height: 30px;
 }
 
 body .rightSection .lowerCardContainer .lowerCard .cardHeader .ratingStars {
     width: 150px;
+}
+
+body .rightSection .lowerCardContainer .lowerCard .cardBody h2 {
+    font-size: 1rem;
+    color: #18181B;
+    margin: 10px 0px;
+}
+
+body .rightSection .lowerCardContainer .lowerCard .cardBody p {
+    font-size: 1rem;
+    color: #52525A;
+}
+
+/* =====================================
+            responsive CSS
+===================================== */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 1280px) {
+    body .reviewContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        min-width: 380px;
+        width: 100vw;
+    }
+
+    body .reviewContainer .leftSection{
+        margin: auto 40px;
+        width: 100%;
+        height: 100%;
+    }
+
+    body .reviewContainer .rightSection{
+        margin: auto 40px;
+        width: 100%;
+        height: 100%;
+    }
 }
